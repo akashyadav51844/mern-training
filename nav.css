@@ -3,38 +3,40 @@
 
 }
 div{
-    background-color: wheat;
+    background-color: darkblue;
     
     text-align: center;
     display: flex;
     justify-content: space-between;
     
+    
 }
 body{
-    background-color: rgb(234, 140, 140);
+    background-color: rgb(2, 0, 0);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
+    
 ul li{
     display: flex;
     padding: 20px;
-      ;
+      
 }
 ul li a{
     text-decoration: none;
-    color: black;
+    color: whitesmoke;
     font-size: 20px;
     font-weight: bold;
+    border-bottom: 10px;
     
     
     text-shadow: 2px 2px 5px white;
     
 }
 ul li a:hover{
-    background-color:white;
-    color: rgba(92, 13, 13, 0.644);
+    background-color: whitesmoke;
+    color: darkgrey;
     transform: scale(1.2);
     active{ transform: scale(1.2);}
+    
 }
 li img:hover{
     transform: rotate(360deg);
@@ -47,4 +49,36 @@ ul{
     list-style: none;    
     margin: 0;
     padding: 0;
+}
+.main{
+    background-image: url("https://cdn.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507_1280.jpg");
+    background-size: cover;
+    height: 100vh;
+align-items: center;
+justify-content: center;
+display: flex;
+color: aliceblue;
+text-transform: uppercase;
+letter-spacing: 4px;
+font-weight: bold;
+flex-direction: column;
+
+
+}
+.main h1:hover{
+    transform: scale(1.2);
+    color: aliceblue;
+    margin-top: 20px;
+    text-shadow: 0 10px 10px ;
+}
+input[type="submit"]{
+    height: 40px;
+    width:100px;
+    border-radius: 20px;
+    background: lightskyblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transform:scale(1.2) ;
+    
 }
