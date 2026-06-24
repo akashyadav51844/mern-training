@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let imgurl;
+        imgurl= prompt("enter image url")
+
+
+  let sname , h ,e ,m , total, avg , sstatus ;
+  sname=parseInt(prompt("enter student name"));
+  h = parseInt(prompt("enter hindi marks "));
+  e = parseInt(prompt("enter english marks"));
+  m = parseInt(prompt("enter maths marks here"));
+total= h+e+m;
+avg= total/3;
+sstatus =(avg>=60)?  "pass":"fail";
+
+document.write(` 
+
+<img src="${imgurl}" width ="300">
+
+student name : ${sname}
+hindi marks:${h}
+english marks:${e}
+maths marks:${m}
+total marks:${total}
+average:${avg}
+status:${avg>=60? 'pass':'fail'}
+
+
+`);
+
+    </script>
+</body>
+</html>
